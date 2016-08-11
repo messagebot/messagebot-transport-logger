@@ -17,7 +17,7 @@ module.exports = {
 
       deliver: function(payload, person, callback){
         var message = '';
-        message += '[' + payload.logPrefix + ' | to ' + person.data.data.firstName + ' ' + person.data.data.firstName + '] ';
+        message += '[' + payload.logPrefix + ' => ' + person.data.data.firstName + ' ' + person.data.data.lastName + '] ';
         message += payload.body;
 
         api.log(message, payload.logLevel);
