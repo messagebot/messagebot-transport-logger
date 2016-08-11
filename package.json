@@ -1,7 +1,7 @@
 {
   "author": "Evan Tahler <evan@messagebot.io>",
   "name": "messagebot-transport-logger",
-  "description": "A simple MessageBot trasport (for testing) which just \"sends\" the message to the logs",
+  "description": "A simple MessageBot transport (for testing) which just \"sends\" the message to the logs",
   "version": "0.0.1",
   "license": "Apache-2.0",
   "repository": {
