@@ -1,0 +1,17 @@
+{
+  "author": "Evan Tahler <evan@messagebot.io>",
+  "name": "messagebot-transport-logger",
+  "description": "MessageBot Transcport for SMTP",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/messagebot/messagebot-transport-logger.git"
+  },
+  "engines": {
+    "node": "^4.2.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {}
+}
