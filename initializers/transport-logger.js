@@ -7,7 +7,7 @@ module.exports = {
       description: 'for testing messages by sending them to a log file',
 
       requiredDataKeys: {
-        person: ['firstName', 'lasName']
+        person: ['firstName', 'lastName']
       },
 
       campaignVariables: [
