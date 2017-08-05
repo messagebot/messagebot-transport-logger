@@ -1,7 +1,7 @@
 module.exports = {
-  loadPriority:  1000,
+  loadPriority: 1000,
 
-  initialize: function(api, next){
+  initialize: function (api, next) {
     var transport = {
       name: 'logger',
       description: 'for testing messages by sending them to a log file',
@@ -12,21 +12,21 @@ module.exports = {
 
       campaignVariables: [
         'logPrefix',
-        'logLevel',
+        'logLevel'
       ],
 
-      deliver: function(payload, person, callback){
-        var message = '';
-        message += '[' + payload.logPrefix + ' => ' + person.data.data.firstName + ' ' + person.data.data.lastName + '] ';
-        message += payload.body;
+      deliver: function (payload, person, callback) {
+        var message = ''
+        message += '[' + payload.logPrefix + ' => ' + person.data.firstName + ' ' + person.data.lastName + '] '
+        message += payload.body
 
-        api.log(message, payload.logLevel);
-        return callback();
+        api.log(message, payload.logLevel)
+        return callback()
       }
     }
 
-    api.transports.push(transport);
+    api.transports.push(transport)
 
-    next();
-  },
-};
+    next()
+  }
+}
